@@ -1,5 +1,10 @@
+package Question;
 
 public class Question1_5 {
+	
+	/*
+	 * Cracking the Coding Interview Question 1.5
+	 */
 	
 	public static String compressString(String str){
 		char [] words = str.toCharArray();
@@ -27,8 +32,4 @@ public class Question1_5 {
 		return sentence.toString();
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println(compressString("aaaaaaaaaaaaabc"));
-	}
 }

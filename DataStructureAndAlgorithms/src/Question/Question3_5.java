@@ -1,3 +1,4 @@
+package Question;
 import java.util.EmptyStackException;
 
 import DataStructures.MyStack;
@@ -5,7 +6,11 @@ import DataStructures.MyStack;
 
 public class Question3_5 {
 	
-	public static class SortStack<T>{
+	/*
+	 * Cracking the Coding Interview Question 3.5
+	 */
+	
+	public class SortStack<T>{
 		private MyStack stack;
 		private MyStack temp;
 		
@@ -41,27 +46,5 @@ public class Question3_5 {
 		}
 	}
 	
-
-	public static void main(String[] args){
-		
-			SortStack sortStack = new SortStack();
-
-			sortStack.push(1);
-			sortStack.push(2);
-			sortStack.push(5);
-			sortStack.push(4);
-			sortStack.push(3);
-			sortStack.push(15);
-			sortStack.push(6);
-			sortStack.push(2);
-			sortStack.push(9);
-			sortStack.push(65);
-			sortStack.push(10);
-			
-			while( !sortStack.isEmpty() ){
-			System.out.println((int)sortStack.remove());
-			}
-		
-		}
 
 }

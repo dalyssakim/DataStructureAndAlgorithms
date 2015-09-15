@@ -3,7 +3,7 @@ package DataStructures;
 import java.util.NoSuchElementException;
 
 public class MyQueue <T> {
-	private static class QueueNode<T>{
+	private class QueueNode<T>{
 		private T data;
 		private QueueNode<T> next;
 		

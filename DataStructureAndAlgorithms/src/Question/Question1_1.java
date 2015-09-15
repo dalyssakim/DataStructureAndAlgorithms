@@ -1,24 +1,13 @@
+package Question;
 
 public class Question1_1 {
 
 	 /*
+	  * Cracking the Coding Interview Question 1.1
 	 * Determine if a string has all unique characters.
 	 * What if there is no additional Data Structure?
 	 */
 	static char charMap[];
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		charMap = new char[128];
-		String s = "adjoedjlsjwodneosmaowj";
-		for(int i = 0; i < s.length(); i++){
-			if(put(s.charAt(i))){
-				
-			}
-			else System.out.println("i = "+i);
-		}
-		
-	}
 	
 	public static boolean put(char c){
 		if(charMap[c/1] != 0){

@@ -1,32 +1,18 @@
+package Question;
 
 public class Question2_5 {
+	
+	/*
+	 * Cracking the Coding Interview Question 2.5
+	 */
 
-	static Node headA;
-	static Node headB;
-	static Node headR;
+	 Node headA;
+	 Node headB;
+	 Node headR;
 	
-	public static void main(String[] args){
 	
-		headA = new Node(7);
-		headB = new Node(5);
-		headR = new Node(0);
-		
-		headA.addToTail(1);
-		headA.addToTail(6);
-		headB.addToTail(9);
-		headB.addToTail(2);
-		
-		SumLists(headA, headB, headR, 3);
-		Node Result = headR;
-		while(Result.next != null){
-			System.out.print(Result.data + "-");
-			Result = Result.next;
-		}
-		System.out.println("");
-		
-	}
 	
-	public static void SumLists(Node headA, Node headB, Node headR, int maxDigit){
+	public void SumLists(Node headA, Node headB, Node headR, int maxDigit){
 		
 		Node A = headA;
 		Node B = headB;
@@ -49,7 +35,7 @@ public class Question2_5 {
 		}
 	}
 	
-	public static class Node{
+	private class Node{
 		int data;
 		Node next;
 		

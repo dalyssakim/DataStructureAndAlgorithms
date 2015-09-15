@@ -1,11 +1,11 @@
 package DataStructures;
 
 public class MinHeap {
-	private static Node []heap = new Node[100];
-	private static int size = 0;
+	private Node []heap = new Node[100];
+	private int size = 0;
 	
 	
-	public static void insert(int data){
+	public  void insert(int data){
 		heap[size] = new Node(data);
 		int parent_i = 0;
 		if( size >= 1){
@@ -26,7 +26,7 @@ public class MinHeap {
 		
 	}
 	
-	public static int remove(){
+	public  int remove(){
 		int data = heap[0].data;
 		heap[0].data = heap[size-1].data;
 		size--;
@@ -34,7 +34,7 @@ public class MinHeap {
 		return data;
 	}
 	
-	private static void upStructure(int current_i){
+	private  void upStructure(int current_i){
 		int parent_i = -1;
 		
 		if( current_i <= 0) return;
@@ -55,7 +55,7 @@ public class MinHeap {
 		}
 	}
 	
-	private static void downStructure(int current_i){
+	private void downStructure(int current_i){
 		
 
 
@@ -72,43 +72,9 @@ public class MinHeap {
 		}
 	}
 	
-	private static int findMinOfChild(int current_i){
+	private int findMinOfChild(int current_i){
 		if ( heap[current_i*2+1].data > heap[current_i*2+2].data ) return current_i*2+2;
 		else return current_i*2+1;
 	}
 	
-public static void main(String[] args){
-		
-
-	insert(4);
-	
-	
-
-	
-	insert(50);
-
-
-	insert(7);
-	
-	
-	insert(55);
-	insert(90);
-	insert(87);
-	insert(2);
-	
-	
-	for(int i = 0; i < 100; i++ ){
-		if(heap[i] != null){
-			System.out.println("i = "+ i + " , data = " + heap[i].data);
-		}
-	}
-		
-		System.out.println("get Min");
-		System.out.println(remove());
-		System.out.println(remove());
-		System.out.println(remove());
-		System.out.println(remove());
-		System.out.println(remove());
-		System.out.println(remove());
-	}
 }

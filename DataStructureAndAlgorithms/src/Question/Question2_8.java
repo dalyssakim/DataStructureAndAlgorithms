@@ -1,30 +1,14 @@
+package Question;
 
 
 public class Question2_8 {
 
+	/*
+	 * Cracking the Coding Interview Question 2.8
+	 */
 
-
-	public static void main(String[] args){
 	
-		Node headOrigin = new Node('0');
-		headOrigin.addToTail('1');
-		headOrigin.addToTail('2');
-		headOrigin.addToTail('3');
-		headOrigin.addToTail('4');
-		headOrigin.addToTail('5');
-		headOrigin.addToTail('6');
-		headOrigin.addToTail('7');
-		
-		headOrigin.next.next.next.next.next.next = headOrigin.next.next.next;
-		Node loopNode = loopDetection(headOrigin);
-		System.out.println(headOrigin.next.next.next.data);
-		if(loopNode != null){
-			System.out.println(loopNode.data);
-		}
-		
-		}
-	
-	public static Node loopDetection(Node A){
+	public Node loopDetection(Node A){
 		Node slowNode = A;
 		Node fastNode = A;
 		
@@ -52,7 +36,7 @@ public class Question2_8 {
 	
 	
 	
-	public static class Node{
+	private class Node{
 		char data;
 		Node next;
 		

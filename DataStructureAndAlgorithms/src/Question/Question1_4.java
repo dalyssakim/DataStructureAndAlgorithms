@@ -1,5 +1,9 @@
+package Question;
 
 public class Question1_4 {
+	/*
+	 * Cracking the Coding Interview Question 1.4
+	 */
 	
 	public static String convertBlank(String s, int length){
 		StringBuffer sentence = new StringBuffer();
@@ -20,8 +24,4 @@ public class Question1_4 {
 		return sentence.toString();
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println(convertBlank("Mr John Smith  ", 13));
-	}
 }

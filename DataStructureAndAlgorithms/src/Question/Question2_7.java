@@ -1,29 +1,20 @@
+package Question;
 
 
 
 public class Question2_7 {
-
-
-	public static void main(String[] args){
 	
-		Node headOrigin = new Node('a');
-		headOrigin.addToTail('p');
-		headOrigin.addToTail('p');
-		headOrigin.addToTail('l');
-		headOrigin.addToTail('e');
-		
-		Node palindNode = new Node('k');
-		palindNode.addToTail('t');
-		palindNode.next.next = headOrigin.next;
-		}
-	
-	public static Node Intersection(Node A){
+	/*
+	 * Cracking the Coding Interview Question 2.7
+	 */
+
+	public Node Intersection(Node A){
 		return null;
 	}
 	
 	
 	
-	public static class Node{
+	public class Node{
 		char data;
 		Node next;
 		
