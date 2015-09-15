@@ -36,11 +36,11 @@ public class Test {
 		Node []treeNode = new Node[10];
 		
 		for(int i = 0; i < treeNode.length; i++){
-			treeNode[i] = new Node(i);
+			treeNode[i] = new Node(i);   
 		}
-		
+		  
 		Question4_2 q4_2 = new Question4_2();
-		Node newRoot = new Node(-1);
+		Node newRoot  = new Node(-1);
 		q4_2.MinimalTree(treeNode, newRoot, 0, treeNode.length-1);
 		BinaryTreeTraversal traverse = new BinaryTreeTraversal();
 		traverse.BreadthFirstBinaryTreeSearch(newRoot);
