@@ -29,4 +29,20 @@ public class BinaryTreeTraversal {
 			visit(node);
 		}
 	}
+	
+	public void BreadthFirstBinaryTreeSearch(Node node){
+		MyQueue queue = new MyQueue();
+		queue.add(node);
+		
+		while(!queue.isEmpty()){
+			Node r = (Node) queue.remove();
+			visit(r);
+			if(r.left != null){
+				queue.add(r.left);
+			}
+			if(r.right != null){
+				queue.add(r.right);
+			}
+		}
+	}
 }
